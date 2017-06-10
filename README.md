@@ -6,7 +6,7 @@ Type the following code in the console to download or update data.
 ```
 python spider.py
 ```
-The first run takes a long time, then the update will be much faster. After the operation, you can get the fund data from ./data/fund-data.db, 
+The first run takes a long time, then the update will be much faster. After the operation, you may get the fund data from "./data/fund-data.db", 
 which is a sqlite file. The following code describes the database table design.
 
 ```
@@ -21,3 +21,5 @@ CREATE TABLE fundValue (
 
 CREATE INDEX idx_fund ON fundValue (code, trade_date);
 ```
+## Requirement
+You need Python3, BeautifulSoup4, pandas, requests, numpy to run this module. Anaconda is recommanded. 
